@@ -17,16 +17,19 @@ namespace RHMMUH005 {
 	class HuffmanTree {
 
 	public: // public members
-		shared_ptr<HuffmanNode> root;
+		std::shared_ptr<HuffmanNode> root;
 
-		HuffmanTree();	// default constructor
+		//HuffmanTree();	// default constructor
 		~HuffmanTree();	// destructor
 
 		// methods to compress data
+		std::compressData(string input, unordered_map<char, string>& map);
+
+		std::string getCharFreq(string file, unordered_map<char, int>& Map);
 
 		// build the Huffman tree
 		void buildTree(unordered_map<char, int>& Map);
-		void code(const HuffmanNode& A, string prefix, unodered_map<char, string>& map);
+		void buildCodeTable(const HuffmanNode& A, std::string prefix, std::unodered_map<char, string>& map);
 
 	};
 }
