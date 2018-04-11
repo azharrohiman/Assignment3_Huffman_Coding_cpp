@@ -10,6 +10,8 @@
 #include <vector>
 #include <memory>
 
+using namespace std;
+
 namespace RHMMUH005 {
 	class HuffmanNode {
 
@@ -22,7 +24,7 @@ namespace RHMMUH005 {
 
 	public: // public members
 
-		std::shared_ptr<HuffmanNode> left, right; // left & right nodes
+		shared_ptr<HuffmanNode> left, right; // left & right nodes
 
 		HuffmanNode();	// default constructor
 		HuffmanNode(char character, int frequency);
