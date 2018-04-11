@@ -13,4 +13,4 @@ driver.o: driver.cpp
 	$(CC) -c driver.cpp
 
 clean:
-	rm -rf *.o
+	rm -rf *.o huffencode
